@@ -1,0 +1,118 @@
+<html>
+<head><title>Google</title></head>
+<body bgcolor="#3F51B5">
+
+<h1 align=center><font face="Ubuntu" color="#FFEB3B"><i>Google Android</i></font></h1>
+
+<h2><font face="URW Chancery L" color="#FF4081">What is Android?</font></h3>
+<p><font color="#ffffff">Android is developed by Google Inc. First Android was released on September 23, 2008. Android is an operation system which is based on Linux-OS. It's a mobile OS. At the moment, 1 billion users have Android OS on their phones. Android is the most used mobile OS. The latest version of Android is Android 5.1(lollipop).</font></p>
+
+<h2><font face="URW Chancery L" color="#FF4081">Development</font></h3>
+<p> <font color="#ffffff">Android OS is a Open Source project. It's source code can be found <a href="https://android.googlesource.com/">here</a>. The Android OS can be built using Linux OS(Any distro) or Mac OS. OS Setup tutorial can be found <a href="https://source.android.com/source/initializing.html">here</a>. The source building tools is mainly written in C++ and C and system apps are written in XML and Java. The whole Android source code is of about 20GB and requires about 40GB of free space for compiling from source.</p>
+
+<h3><font face="URW Chancery L" color="#FF4081">Releases:</font></font></h4>
+<p><font color="#ffffff">The first Android version (Android Alpha 1.0) was released on September 2008. The latest release is Android Lollipop 5.1(API 22). The Android codename are released on alphabatical order; just linux Linux OS. Till date, Android Lollipop is the biggest update with new looks called Material Design.</font></p>
+<p> <font color="#ffffff">Android Version history by API level</font></p>
+<table width="75%" align=center style="color:#ffffff">
+<tr bgcolor="#FF5722"><th>Android Version</th>
+<th>codename</th>
+<th>API level</th></tr>
+<tr bgcolor="#303F9F"><td align="center">Android 1.0</td>
+<td>alpha</td>
+<td>API 1</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 1.1</td>
+<td>beta</td>
+<td>API 2</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 1.5</td>
+<td>cupcake</td>
+<td>API 3</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 1.6</td>
+<td>donut</td>
+<td>API 4</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 2.0</td>
+<td>eclair</td>
+<td>API 5</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 2.0.1</td>
+<td>eclair</td>
+<td>API 6</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 2.1</td>
+<td>eclair</td>
+<td>API 7</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 2.2-2.2.3</td>
+<td>froyo</td>
+<td>API 8</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 2.3-2.3.2</td>
+<td>gingerbread</td>
+<td>API 9</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 2.3.3-2.3.7</td>
+<td>gingerbread</td>
+<td>API 10</td>
+</tr>
+<tr bgcolor="#303F9F"><td align="center">Android 3.0</td>
+<td>honeycomb</td>
+<td>API 11</td>
+<tr bgcolor="#303F9F"><td align="center">Android 3.1</td>
+<td>honeycomb</td>
+<td>API 12</td>
+<tr bgcolor="#303F9F"><td align="center">Android 3.2</td>
+<td>honeycomb</td>
+<td>API 13</td>
+<tr bgcolor="#303F9F"><td align="center">Android 4.0-4.0.2</td>
+<td>ice cream sandwich</td>
+<td>API 14</td>
+<tr bgcolor="#303F9F"><td align="center">Android 4.0.3-4.0.4</td>
+<td>ice cream sandwich</td>
+<td>API 15</td>
+<tr bgcolor="#303F9F"><td align="center">Android 4.1</td>
+<td>jelly bean</td>
+<td>API 16</td>
+<tr bgcolor="#303F9F"><td align="center">Android 4.2</td>
+<td>jelly bean</td>
+<td>API 17</td>
+<tr bgcolor="#303F9F"><td align="center">Android 4.3</td>
+<td>jelly bean</td>
+<td>API 18</td>
+<tr bgcolor="#303F9F"><td align="center">Android 4.4</td>
+<td>kitkat</td>
+<td>API 19</td>
+<tr bgcolor="#303F9F"><td align="center">Android 4.4 with wearable extensions</td>
+<td>kitkat</td>
+<td>API 20</td>
+<tr bgcolor="#303F9F"><td align="center">Android 5.0-5.0.2</td>
+<td>lollipop</td>
+<td>API 21</td>
+<tr bgcolor="#303F9F"><td align="center">Android 5.1</td>
+<td>lollipop</td>
+<td>API 22</td>
+</table>
+
+<h2><font face="URW Chancery L" color="#FF4081">Building</font></h3>
+<font color="#ffffff"><p>To port Android to a new device, we need to work on tree major components.</p>
+<ol><li><u>Device tree</u></li>
+<p>The major configuration part for a device is done here. As the name itself points, it is device-specific; means, every device have it's own config setup. Many examples of device tree can be found on Google's Android source git(<a href="https://android.googlesource.com/">here</a>)</p>
+Location:android/device/*vendor*/*device*/<br><br>
+<li><u>Kernel tree</u></li>
+<p>This contains the Linux kernel source. It is setup according to the device's chipset config. That is, devices with same chipset can use the same kernel source!</p>
+Location:android/*vendor*/*device*/ or android/*vendor*/*chipset*/<br><br>
+<li><u>Vendor tree</u></li>
+<p>This contains the library files needed my Android OS. These lib files(.so) are located in /system/lib & /system/vendor/lib on our phone running Android.</p>
+Location:android/vendor/*vendor*/*device*/</ol><br><br>
+
+<h2><font face="URW Chancery L" color="#FF4081">Useful Links:</font></h3>
+<b><a href="https://www.android.com/"><font color="#F5F5F5">Google Android</font></a><br>
+<a href="https://android.googlesource.com/"><font color="#F5F5F5">Google Android Source Code Git</font></a><br>
+<a href="https://developer.android.com/"><font color="#F5F5F5">Google Android Development/Building</font></a></b><br>
+</font>
+
+<p align="right"><font color="#00FA9A" size=2>By Parth Bhatia</font></p>
+</body>
+</html>
