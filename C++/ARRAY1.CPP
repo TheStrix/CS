@@ -1,3 +1,8 @@
+﻿Array Programs
+Name:Parth Bhatia								Date: 11/03/2015		
+STD/DIV: XI/H								Roll No: 3
+Title: WAP to read numbers from user and calculate it's average using array.  
+
 #include<iostream.h>
 #include<conio.h>
 void main(){

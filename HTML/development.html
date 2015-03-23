@@ -1,0 +1,33 @@
+<html>
+<head><title>Google</title></head>
+<body bgcolor="#3F51B5">
+
+<h1 align=center><font face="Ubuntu" color="#FFEB3B"><i>Google Android</i></font></h1>
+
+<h2><font face="URW Chancery L" color="#FF4081">What is Android?</font></h3>
+<p><font color="#ffffff">Android is developed by Google Inc. First Android was released on September 23, 2008. Android is an operation system which is based on Linux-OS. It's a mobile OS. At the moment, 1 billion users have Android OS on their phones. Android is the most used mobile OS. The latest version of Android is Android 5.1(lollipop).</font></p>
+
+<h2><font face="URW Chancery L" color="#FF4081">Development</font></h3>
+<p> <font color="#ffffff">Android OS is a Open Source project. It's source code can be found <a href="https://android.googlesource.com/">here</a>. The Android OS can be built using Linux OS(Any distro) or Mac OS. OS Setup tutorial can be found <a href="https://source.android.com/source/initializing.html">here</a>. The source building tools is mainly written in C++ and C and system apps are written in XML and Java. The whole Android source code is of about 20GB and requires about 40GB of free space for compiling from source.</p>
+
+<h2><font face="URW Chancery L" color="#FF4081">Building</font></h3>
+<font color="#ffffff"><p>To port Android to a new device, we need to work on tree major components.</p>
+<ol><li><u>Device tree</u></li>
+<p>The major configuration part for a device is done here. As the name itself points, it is device-specific; means, every device have it's own config setup. Many examples of device tree can be found on Google's Android source git(<a href="https://android.googlesource.com/">here</a>)</p>
+Location:android/device/*vendor*/*device*/<br><br>
+<li><u>Kernel tree</u></li>
+<p>This contains the Linux kernel source. It is setup according to the device's chipset config. That is, devices with same chipset can use the same kernel source!</p>
+Location:android/*vendor*/*device*/ or android/*vendor*/*chipset*/<br><br>
+<li><u>Vendor tree</u></li>
+<p>This contains the library files needed my Android OS. These lib files(.so) are located in /system/lib & /system/vendor/lib on our phone running Android.</p>
+Location:android/vendor/*vendor*/*device*/</ol><br><br>
+
+<h2><font face="URW Chancery L" color="#FF4081">Useful Links:</font></h3>
+<b><a href="https://www.android.com/">Google Android</a><br>
+<a href="https://android.googlesource.com/">Google Android Source Code Git</a><br>
+<a href="https://developer.android.com/">Google Android Development/Building</a></br>
+<a href="profile.html">My Profile</a><br></b>
+</font>
+
+</body>
+</html>

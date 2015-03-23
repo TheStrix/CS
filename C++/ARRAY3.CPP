@@ -1,3 +1,7 @@
+﻿Name:Parth Bhatia								Date: 11/03/2015		
+STD/DIV: XI/H								Roll No: 3
+Title: WAP to read elements from user. Create array of element and search the user defined element inside the array. Display the position at which the element is found.
+
 #include<iostream.h>
 #include<conio.h>
 void main(){
@@ -20,6 +24,7 @@ getch();
 }
 
 /*
+=============OUTPUT=============
 Enter array elements:5
 9
 7
